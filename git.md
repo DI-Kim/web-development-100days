@@ -30,6 +30,14 @@
 3. adding staging area `git add <file_name>`
    - adding all `git add .`
 4. make a snapshot `git commit -m <commit message>`
+5. connecting repository to local `git remote add origin <github repository URL>`
+   - `origin` means `<github repository URL>` and origin is like a convention, possible to change but not recommend
+6. send local data to repository `git push -u origin main`
+7. reset commit `git reset`
+   - hard reset (delete recent `number` commit) `git reset --hard HEAD~<number>`
+8. back to recently commit
+   - delete unstaged changes (after add) `git checkout -- .` or `git checkout -- <file name>`
+   - delete staged changes (after commit) `git reset <file name>`
 
 <Br>
 
@@ -37,6 +45,7 @@
 
 1. change branch name `git branch -m <name>`
 2. make branch `git checkout -b <branch name>`
+3. delete branch `git branch -D <branch name>`
 
 <Br>
 
