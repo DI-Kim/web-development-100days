@@ -1,5 +1,7 @@
 # Git
 
+DOCS https://git-scm.com/book/ko/v2
+
 ---
 
 ## Theory
@@ -31,31 +33,32 @@
 
 1. initialize `git init`
 2. information about current branch `git status`
-3. adding staging area `git add <file_name>`
+3. adding files on staging area `git add <file_name>`
    - adding all `git add .`
 4. make a snapshot `git commit -m <commit message>`
 5. connecting repository to local `git remote add origin <repository URL>`
    - `origin` means `<repository URL>` and origin is like a convention, possible to change but not recommend
 6. send local data to repository `git push -u origin main`
-7. reset commit `git reset`
+7. send repository data to local `git pull`
+8. reset commit `git reset`
    - hard reset (delete recent `number` commit) `git reset --hard HEAD~<number>`
-8. back to recently commit
-   - delete unstaged changes (after add) `git checkout -- .` or `git checkout -- <file name>`
-   - delete staged changes (after commit) `git reset <file name>`
-9. clone repository (make repository folder) `git clone <repository URL>`
-   - clone in current folder `git clone <repository URL> .`
+9. back to recently commit
+   - delete unstaged changes `git checkout -- .` or `git checkout -- <file name>`
+   - delete staged changes (after add) `git reset <file name>`
+10. clone repository (make repository folder) `git clone <repository URL>`
+    - clone in current folder `git clone <repository URL> .`
 
 <Br>
 
 ## Branch
 
-1. change branch name `git branch -m <name>`
-2. make branch `git checkout -b <branch name>`
-3. delete branch `git branch -D <branch name>`
+- make branch `git checkout -b <branch name>`
+- change branch name `git branch -m <name>`
+- delete branch `git branch -D <branch name>`
 
 <Br>
 
 ## Merge
 
-1. in main branch, merge a branch `git merge <branch name>`
-   - conflict: solve conflict and git add & git commit again
+- in main branch, merge a branch `git merge <branch name>`
+  - conflict: solve conflict and git add & git commit again
