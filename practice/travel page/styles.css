@@ -46,6 +46,12 @@
   background-color: rgb(255, 231, 0);
 }
 
+#highlights {
+  padding: 24px; /* margin collapsing 없애기위한 패딩 */
+  /* background-color: rgb(227, 255, 253); */
+  background: linear-gradient(0deg, rgb(227, 255, 253), rgb(202, 243, 240));
+}
+
 #highlights h2 {
   text-transform: uppercase;
   text-align: center;
