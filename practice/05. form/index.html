@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>HTML Forms</title>
+  </head>
+  <body>
+    <header>
+      <h1>Demo Form</h1>
+    </header>
+    <main>
+      <form action="/web-development-100days/practice/05.%20form/" method="GET">
+        <section>
+          <h2>Your personal details</h2>
+          <ul>
+            <li>
+              <label for="userName">Your name</label>
+              <input type="text" name="user-name" id="userName" required maxlength="10" placeholder="Write your name" />
+            </li>
+            <li>
+              <label for="userEmail">Your email address</label>
+              <input type="email" name="user-email" id="userEmail" required />
+            </li>
+            <li>
+              <label for="userPassword">Your password</label>
+              <input type="password" name="user-password" id="userPassword" required minlength="7" />
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>More details</h2>
+          <ul>
+            <li>
+              <label for="userAge">Your age</label>
+              <input type="number" name="user-age" id="userAge" step="0.5" min="18" max="100" />
+            </li>
+            <li>
+              <label for="userBirthdate">Your birth date</label>
+              <input type="date" id="userBirthdate" name="user-birthdate" min="1901-01-01" max="2005-01-01" />
+            </li>
+            <li>
+              <label for="favoriteColor">Your favorite color</label>
+              <select name="favorite-color" id="favoriteColor">
+                <option value="blue">Blue</option>
+                <option value="black">Black</option>
+                <option value="red">Red</option>
+              </select>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <label for="userMessage">Your message</label>
+          <textarea name="user-message" id="userMessage" rows="5"></textarea>
+        </section>
+
+        <section>
+          <h2>How should we verify your account?</h2>
+          <ul>
+            <li class="form-control-inline">
+              <input type="radio" name="verify" id="verifyTextMessage" value="text-message" required />
+              <label for="verifyTextMessage">Via text message (SMS)</label>
+            </li>
+            <li class="form-control-inline">
+              <input type="radio" name="verify" id="verifyPhone" value="phone" required />
+              <label for="verifyPhone">Via a phone call</label>
+            </li>
+            <li class="form-control-inline">
+              <input type="radio" name="verify" id="verifyEmail" value="email" required />
+              <label for="verifyEmail">Via an email</label>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>How should we contact you?</h2>
+          <ul>
+            <li class="form-control-inline">
+              <input type="checkbox" id="contactEmail" name="contact" value="email" />
+              <label for="contactEmail">Contact me via email</label>
+            </li>
+
+            <li class="form-control-inline">
+              <input type="checkbox" id="contactPhone" name="contact" value="phone" />
+              <label for="contactPhone">Contact me via phone</label>
+            </li>
+          </ul>
+        </section>
+
+        <hr />
+
+        <section>
+          <div class="form-control-inline">
+            <input type="checkbox" id="agreeTerms" name="terms" />
+            <label for="agreeTerms">Agree to terms?</label>
+          </div>
+        </section>
+
+        <button type="reset">Reset</button>
+        <button type="button">Button</button>
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>

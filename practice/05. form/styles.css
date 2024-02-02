@@ -1,0 +1,76 @@
+body {
+  background-color: rgb(30, 30, 30);
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  width: 30rem;
+  margin: 3rem auto;
+  background-color: rgb(255, 255, 255);
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+textarea {
+  resize: none;
+}
+
+input,
+textarea,
+select {
+  /* font: normal 1rem "Roboto", sans-serif; */
+  font: inherit; /** 상속받은 스타일로 default 스타일을 덮어씌움 */
+  width: 100%;
+  display: block;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  border: 1px solid rgb(184, 184, 184);
+  padding: 0.25rem;
+  color: rgb(85, 85, 85);
+}
+input:focus,
+textarea:focus {
+  background-color: rgb(219, 190, 253);
+  color: rgb(35, 5, 72);
+  border-color: rgb(35, 5, 72);
+}
+
+button {
+  font: inherit; /** 상속받은 스타일로 default 스타일을 덮어씌움 */
+  display: inline-block;
+  background-color: rgb(35, 5, 72);
+  color: white;
+  border: 1px solid rgb(35, 5, 72);
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgb(61, 18, 112);
+  border: 1px solid rgb(61, 18, 112);
+}
+
+.form-control-inline {
+  display: flex;
+}
+
+.form-control-inline input {
+  width: auto;
+  margin-right: 0.5rem;
+}
