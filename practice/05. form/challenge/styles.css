@@ -6,12 +6,22 @@ body {
   background-color: rgb(242, 251, 251);
 }
 
-header {
+h1 {
   text-align: center;
+  margin: 2rem;
 }
 
 section {
   margin-bottom: 1rem;
+}
+
+form {
+  width: 40rem;
+  margin: auto;
+  background-color: rgb(240, 247, 251);
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 ul {
@@ -20,13 +30,10 @@ ul {
   padding: 0;
 }
 
-form {
-  width: 50rem;
-  margin: 1rem auto;
-  background-color: rgb(240, 247, 251);
-  padding: 2rem 1rem;
-  border-radius: 6px;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+label {
+  color: rgb(55, 68, 96);
+  display: block;
+  margin: 0.5rem 0;
 }
 
 textarea {
@@ -36,16 +43,19 @@ textarea {
 input,
 textarea,
 select {
+  font: inherit;
   display: block;
   margin: 0.5rem 0;
   padding: 0.5rem;
   width: 100%;
   box-sizing: border-box;
   color: rgb(77, 77, 77);
+  border: 1px solid rgb(152, 159, 184);
+  border-radius: 4px;
 }
 input:focus,
 textarea:focus {
-  background-color: rgb(193, 213, 245);
+  background-color: rgb(202, 216, 238);
 }
 
 button {
@@ -53,11 +63,11 @@ button {
   border: 1px solid rgb(43, 78, 114);
   border-radius: 5px;
   cursor: pointer;
+  font: inherit;
 }
 
 .form-control {
   display: flex;
-  align-items: center;
 }
 
 .form-control input {

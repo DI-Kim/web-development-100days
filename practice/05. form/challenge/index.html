@@ -11,7 +11,7 @@
       <h1>Contact Us</h1>
     </header>
     <main>
-      <form action="" method="GET">
+      <form action="/web-development-100days/practice/05.%20form/challenge/" method="GET">
         <section>
           <h2>How can we help you?</h2>
           <ul>
@@ -25,45 +25,53 @@
             </li>
             <li>
               <label for="user-phone-number">Your Phone Number</label>
-              <input type="text" id="user-phone-number" name="phone-number" />
+              <input
+                type="tel"
+                required
+                id="user-phone-number"
+                name="phone-number"
+                pattern="[0-9]{2,3}-[0-9]{3,4}-[0-9]{4}"
+                placeholder="010-1234-5678"
+              />
             </li>
             <li>
               <label for="user-message">Your Message</label>
-              <textarea name="message" id="user-message" rows="7" required></textarea>
-            </li>
-            <li>
-              <label for="find-us">How did you find us?</label
-              ><select name="entered" id="find-us">
-                <option value="web">Web Search</option>
-                <option value="mouth">Word of Mouth</option>
-                <option value="other">Other</option>
-              </select>
+              <textarea name="message" id="user-message" rows="7" required minlength="10" maxlength="200"></textarea>
             </li>
           </ul>
+        </section>
+
+        <section>
+          <label for="channel">How did you find us?</label>
+          <select name="channel" id="channel" required>
+            <option value="web">Web Search</option>
+            <option value="mouth">Word of Mouth</option>
+            <option value="other">Other</option>
+          </select>
         </section>
 
         <section>
           <h2>How should we reply?</h2>
           <ul>
             <li class="form-control">
-              <input type="radio" name="reply" id="call" value="call" />
-              <label for="call">Call me</label>
+              <input type="radio" name="reply" id="reply-phone" value="phone" required />
+              <label for="reply-phone">Call me</label>
             </li>
             <li class="form-control">
-              <input type="radio" name="reply" id="email" value="email" />
-              <label for="email">Send me an email</label>
+              <input type="radio" name="reply" id="reply-email" value="email" required />
+              <label for="reply-email">Send me an email</label>
             </li>
             <li class="form-control">
-              <input type="radio" name="reply" id="noreply" value="no" />
-              <label for="noreply">Don't reply</label>
+              <input type="radio" name="reply" id="reply-none" value="none" required />
+              <label for="reply-none">Don't reply</label>
             </li>
           </ul>
         </section>
 
-        <div class="form-control">
+        <section class="form-control">
           <input type="checkbox" required id="terms" name="terms" />
           <label for="terms">Accept Terms</label>
-        </div>
+        </section>
 
         <section class="position-right">
           <button type="reset" class="clear-btn">Clear</button>
