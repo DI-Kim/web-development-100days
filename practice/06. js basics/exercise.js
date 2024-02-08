@@ -46,3 +46,6 @@ function getListItem(array, arrayIndex) {
 // 6) Execute your custom command from (5) and output ("alert") the result
 
 console.log(getListItem(courseGoals, 2));
+
+console.log("exercise.js finish✅");
+console.log("");
